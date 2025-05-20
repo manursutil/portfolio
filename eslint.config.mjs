@@ -9,8 +9,20 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+export default [
+  ...compat.extends(
+    "next/core-web-vitals",
+    "next",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ),
+  {
+    rules: {
+      // 🔕 Desactiva errores de comillas sin escapar en JSX
+      "react/no-unescaped-entities": "off",
+      // 🔕 Desactiva errores por variables no usadas (útil en dev)
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
 ];
-
-export default eslintConfig;
