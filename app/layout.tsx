@@ -4,16 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/app/components/theme-provider";
 import NavBar from "./components/nav-bar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "Manuel Rodríguez Sutil",
   description: "Portfolio of Manuel Rodríguez Sutil",

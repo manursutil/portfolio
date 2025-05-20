@@ -1,8 +1,3 @@
-"use client";
-
-import { useState } from "react";
-import { useKonamiCode } from "@/app/hooks/useKonamiCode";
-import Image from "next/image";
 import Link from "next/link";
 import SelectedProjects from "./components/selectedProjects";
 import { Button } from "@/components/ui/button";
@@ -11,20 +6,8 @@ import { TechStack } from "./components/TechStack";
 import Footer from "./components/Footer";
 
 export default function Home() {
-  const [konamiMode, setKonamiMode] = useState(false);
-
-  useKonamiCode(() => {
-    setKonamiMode(true);
-    new Audio("/powerup.mp3").play();
-  });
-
   return (
-    <div className={konamiMode ? "konami-mode" : ""}>
-      {konamiMode && (
-        <div className="fixed bottom-5 right-5 bg-black text-white px-4 py-2 rounded shadow-lg z-50 animate-pulse">
-          🕹 Konami Mode Activated! CRT engaged.
-        </div>
-      )}
+    <div>
       <ProfileHeader />
       <section className="mt-20">
         <h2 className="font-bold text-2xl">Selected Projects</h2>

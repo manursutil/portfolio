@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/app/data/projects";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const categories = ["Featured Projects", "Web & UI Projects", "Other Projects"];
