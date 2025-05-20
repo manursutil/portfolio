@@ -12,7 +12,7 @@ export default function ProfileHeader() {
         className="rounded-full mt-4"
       />
       <div>
-        <h1 className="text-3xl font-bold">
+        <h1 className="font-bold text-3xl">
           Hey, I'm Manuel <span className="animate-wave">👋</span>
         </h1>
         <p className="text-base text-gray-700 dark:text-gray-400 mt-2">
