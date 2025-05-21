@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/Imagen.png" />
+        <link rel="icon" href="/app/icon.png" />
       </head>
       <body className="bg-gradient-to-br from-blue-200 via-white to-pink-100 dark:from-black dark:via-gray-900 dark:to-gray-900 min-h-screen">
         <ThemeProvider

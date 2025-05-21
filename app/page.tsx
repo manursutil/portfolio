@@ -1,13 +1,26 @@
+"use client";
+import { useState } from "react";
+import { useKonamiCode } from "@/app/hooks/useKonamiCode";
+import BalloonOverlay from "./components/BalloonOverlay";
 import Link from "next/link";
 import SelectedProjects from "./components/selectedProjects";
 import { Button } from "@/components/ui/button";
 import ProfileHeader from "./components/ProfileHeader";
 import { TechStack } from "./components/TechStack";
 import Footer from "./components/Footer";
+import { toast, Toaster } from "sonner";
 
 export default function Home() {
+  const [konamiMode, setKonamiMode] = useState(false);
+
+  useKonamiCode(() => {
+    setKonamiMode(true);
+    setTimeout(() => setKonamiMode(false), 10000); // Auto-reset after 10s
+  });
+
   return (
-    <div>
+    <div className={konamiMode ? "konami-mode" : ""}>
+      {konamiMode && <BalloonOverlay />}
       <ProfileHeader />
       <section className="mt-20">
         <h2 className="font-bold text-2xl">Selected Projects</h2>
@@ -41,6 +54,25 @@ export default function Home() {
       <section className="mt-20">
         <Footer />
       </section>
+      <div className="fixed bottom-5 right-5 z-50">
+        <div className="fixed bottom-5 right-5 z-50">
+          <div className="fixed bottom-5 right-5 z-50">
+            <span
+              className="text-2xl cursor-pointer"
+              onClick={() => {
+                toast("Try this: ↑ ↑ ↓ ↓ ← → ← → B A");
+              }}
+              style={{
+                animation: "bounce-slow 2s infinite",
+                display: "inline-block",
+              }}
+            >
+              🕹️
+            </span>
+            <Toaster />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

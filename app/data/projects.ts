@@ -30,7 +30,7 @@ export const projects = [
     alt: "Political Blog",
     description:
       "A platform to publish critical essays on politics and culture. Built with Next.js and Sanity CMS and deployed on Vercel. Includes a minimalist blog engine, theme toggling, and markdown rendering.",
-    techStack: "Next.js, Tailwind, Vercel, TypeScript",
+    techStack: "Next.js, Tailwind, Vercel, TypeScript, Sanity CMS",
     links: [
       {
         label: "GitHub",

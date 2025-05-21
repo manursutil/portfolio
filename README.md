@@ -10,7 +10,6 @@ It showcases my selected projects, skills, and a bit of personality.
 - **Framework**: Next.js (App Router)
 - **Styling**: Tailwind CSS + Shadcn/UI
 - **Language**: TypeScript
-- **Content Management**: Sanity.io (for blog)
 - **Deployment**: Vercel
 - **Extras**:
   - Theme switcher (system/light/dark)
@@ -24,22 +23,29 @@ It showcases my selected projects, skills, and a bit of personality.
 - 🌗 **Theme Toggle** — System theme by default with manual override
 - 📬 **Working Contact Form** — Sends email via backend API route
 - 🧠 **Featured Projects** — Hand-picked to reflect both technical depth and creativity
+- 🧠 **Konami Code Easter Egg** — try it: `↑ ↑ ↓ ↓ ← → ← → B A`
+- 🎈 Fun interactive elements like floating balloons, confetti, and sound
 
 ---
 
 ## 🖼 Preview
 
-![Screenshot of Portfolio](./public/portfolio.png) <!-- Replace or add later if needed -->
+![Screenshot of Portfolio](./public/portfolio.png)
 
 ---
 
 ## 📂 Project Structure
 
 ```bash
-/app
-  ├── components       # UI components (navbar, footer, cards, etc.)
-  ├── data             # Project data
-  ├── api              # Contact email endpoint
-/public
-  └── images, favicons, assets
+├── app/
+│   ├── components/         # Reusable UI components
+│   ├── data/               # Project info
+│   ├── hooks/              # Custom hooks (e.g. useKonamiCode)
+│   ├── api/                # Contact email endpoint
+│   ├── globals.css         # Tailwind + custom animations
+│   ├── layout.tsx          # Main layout
+│   └── page.tsx            # Homepage layout
+├── public/                 # Static assets (images, audio)
+├── utils/                  # Send email function
+└── README.md
 ```
