@@ -39,4 +39,16 @@ export const projects = [
       { label: "Live Site", url: "https://el-punto-critico-blog.vercel.app/" },
     ],
   },
+  {
+    title: "Sudoku Solver & Generator",
+    category: "Other Projects",
+    image: "/sudoku.png",
+    alt: "Sudoku Solver",
+    description:
+      "A fully functional Sudoku solver and generator built in Python with a graphical user interface. Implements backtracking to solve puzzles and algorithmic random board generation.",
+    techStack: "Python, tkinter (for GUI)",
+    links: [
+      { label: "GitHub", url: "https://github.com/manursutil/sudoku-solver" },
+    ],
+  },
 ];
