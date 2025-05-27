@@ -12,6 +12,23 @@ export const projects = [
     ],
   },
   {
+    title: "Health Risk Predictor",
+    category: "Featured Projects",
+    image: "/health_risk.png",
+    alt: "Health Risk Predictor",
+    description:
+      "A Machine Learning App that predicts the risk of diabetes and heart disease based on user inputs using a trained Random Forest model.  ",
+    techStack:
+      "Python, Streamlit, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, SHAP",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/manursutil/health-risk",
+      },
+      { label: "Live Site", url: "https://health-risk.streamlit.app/" },
+    ],
+  },
+  {
     title: "This Portfolio",
     category: "Web & UI Projects",
     image: "/portfolio.png",
