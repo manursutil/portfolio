@@ -68,4 +68,16 @@ export const projects = [
       { label: "GitHub", url: "https://github.com/manursutil/sudoku-solver" },
     ],
   },
+  {
+    title: "Snippetbox",
+    category: "Other Projects",
+    image: "/snippetbox.png",
+    alt: "Snippetbox",
+    description:
+      "A minimalist web app for storing and sharing text snippets. Built with Go from scratch using only the standard library, it features custom routing, HTML templating, secure authentication, and CSRF protection. Based on Alex Edwards' Let's Go book. ",
+    techStack: "Go, MySQL",
+    links: [
+      { label: "GitHub", url: "https://github.com/manursutil/snippetbox" },
+    ],
+  },
 ];
