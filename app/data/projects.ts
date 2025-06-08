@@ -29,6 +29,21 @@ export const projects = [
     ],
   },
   {
+    title: "FastCSV",
+    category: "Featured Projects",
+    image: "/fastcsv.png",
+    alt: "fastcsv",
+    description:
+      "A python CLI tool that validates, cleans and ingests CSV files into a database using JSON-based schemas. It supports both SQLite and PostgreSQL, automatically generates schemas when missing, and exports detailed summary reports.",
+    techStack: "Python, SQLite, PostgreSQL",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/manursutil/fastcsv",
+      },
+    ],
+  },
+  {
     title: "This Portfolio",
     category: "Web & UI Projects",
     image: "/portfolio.png",

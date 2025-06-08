@@ -10,7 +10,7 @@ import {
 import { projects } from "@/app/data/projects";
 
 export default function SelectedProjects() {
-  const selected = projects.slice(0, 2);
+  const selected = projects.slice(0, 3);
 
   if (selected.length === 0) return null;
 
