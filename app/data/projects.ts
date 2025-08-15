@@ -33,7 +33,7 @@ export const projects = [
     image: "/childObesity.png",
     alt: "Child Obesity Evaluation",
     description:
-      "Pediatric health tool using WHO standards and Gemini AI to assess growth and generate meal plans. Built with FastAPI and React. ",
+      "Assists pediatricians in evaluating a child's growth metrics and generating personalized weekly meal plans based on WHO standards. It is designed to be used by a healthcare professional (in this case, my mother) in clinical practice.",
     techStack: "Python, React, Gemini API, JavaScript",
     links: [
       {
