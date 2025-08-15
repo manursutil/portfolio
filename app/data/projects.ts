@@ -12,6 +12,38 @@ export const projects = [
     ],
   },
   {
+    title: "Brain MRI Classifier",
+    category: "Featured Projects",
+    image: "/brainMri.png",
+    alt: "Brain MRI Classifier",
+    description:
+      "End-to-end MLOps pipeline for brain tumor MRI classification using FastAPI and Docker. Includes inference API, evaluation metrics, and health checks. ",
+    techStack:
+      "Python, FastAPI, PyTorch, Pandas, NumPy, Matplotlib, Docker, CI/CD",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/manursutil/brain-mri-classifier",
+      },
+    ],
+  },
+  {
+    title: "Child Obesity Evaluation",
+    category: "Featured Projects",
+    image: "/childObesity.png",
+    alt: "Child Obesity Evaluation",
+    description:
+      "Pediatric health tool using WHO standards and Gemini AI to assess growth and generate meal plans. Built with FastAPI and React. ",
+    techStack: "Python, React, Gemini API, JavaScript",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/manursutil/obesity",
+      },
+      { label: "Live Site", url: "https://bmi-frontend-seven.vercel.app/" },
+    ],
+  },
+  {
     title: "Health Risk Predictor",
     category: "Featured Projects",
     image: "/health_risk.png",
@@ -29,21 +61,6 @@ export const projects = [
     ],
   },
   {
-    title: "FastCSV",
-    category: "Featured Projects",
-    image: "/fastcsv.png",
-    alt: "fastcsv",
-    description:
-      "A python CLI tool that validates, cleans and ingests CSV files into a database using JSON-based schemas. It supports both SQLite and PostgreSQL, automatically generates schemas when missing, and exports detailed summary reports.",
-    techStack: "Python, SQLite, PostgreSQL",
-    links: [
-      {
-        label: "GitHub",
-        url: "https://github.com/manursutil/fastcsv",
-      },
-    ],
-  },
-  {
     title: "This Portfolio",
     category: "Web & UI Projects",
     image: "/portfolio.png",
@@ -53,6 +70,34 @@ export const projects = [
     techStack: "Next.js, Tailwind, Vercel, Shadcn UI, TypeScript",
     links: [
       { label: "GitHub", url: "https://github.com/manursutil/portfolio" },
+    ],
+  },
+  {
+    title: "Full-Stack Notes Web App",
+    category: "Web & UI Projects",
+    image: "/notes.png",
+    alt: "Notes Web App",
+    description:
+      "A full-featured notes app built with MongoDB for database, Express.js and Node.js for REST API, React + Vite for the frontend. It also includes user sign-up and loging with JWT",
+    techStack: "React, MongoDB, Express, Node.js, JavaScript",
+    links: [
+      { label: "GitHub", url: "https://github.com/manursutil/notes-app" },
+    ],
+  },
+  {
+    title: "Space Invaders",
+    category: "Web & UI Projects",
+    image: "/space.png",
+    alt: "Space Invaders",
+    description:
+      "A fully playable Space Invaders–style game built from scratch with HTML5 Canvas + Vanilla JavaScript, featuring levels, power-ups, audio effects, and a persistent leaderboard.",
+    techStack: "HTML, JavaScript, CSS",
+    links: [
+      { label: "GitHub", url: "https://github.com/manursutil/space-invaders" },
+      {
+        label: "Live Site",
+        url: "https://manursutil.github.io/space-invaders/",
+      },
     ],
   },
   {
